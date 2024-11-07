@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortune Tiger 2.0</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="slot-machine-container">
+        <h1>Fortune Tiger 2.0</h1>
+        
+        <!-- Saldo e Aposta -->
+        <div class="balance-container">
+            <p>Saldo: <span id="balance">100000</span> créditos</p>
+            <label for="bet">Aposta: </label>
+            <input type="number" id="bet" value="10" min="1" max="100">
+        </div>
+
+        <!-- Slot Machine -->
+        <div class="slot-machine">
+            <div class="reel" id="cell1">🐅</div>
+            <div class="reel" id="cell2">💰</div>
+            <div class="reel" id="cell3">🔔</div>
+            <div class="reel" id="cell4">🍀</div>
+            <div class="reel" id="cell5">🎲</div>
+            <div class="reel" id="cell6">🍒</div>
+            <div class="reel" id="cell7">🍇</div>
+            <div class="reel" id="cell8">⭐</div>
+            <div class="reel" id="cell9">🍋</div>
+        </div>
+
+        <!-- Botão e Resultado -->
+        <button onclick="spin()">Girar</button>
+        <p id="result"></p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

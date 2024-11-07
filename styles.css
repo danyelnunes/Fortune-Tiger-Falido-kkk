@@ -1,0 +1,96 @@
+/* Estilo para o corpo e contêiner */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5e5b6;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+}
+
+.slot-machine-container {
+    text-align: center;
+    background-color: #f9d46d;
+    padding: 20px;
+    border: 5px solid #ff8c00;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+/* Estilo para o saldo e a aposta */
+.balance-container {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.balance-container p {
+    margin: 0;
+}
+
+.balance-container input {
+    width: 60px;
+    padding: 5px;
+    font-size: 1em;
+    text-align: center;
+    border: 1px solid #ff8c00;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Estilo para a slot machine */
+.slot-machine {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.reel {
+    font-size: 2em;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #ff8c00;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.1s ease;
+}
+
+/* Botão de girar */
+button {
+    padding: 12px 24px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff8c00;
+    color: white;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #e67700;
+}
+
+/* Animação de giro */
+.spin-animation {
+    animation: spin 0.5s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotateX(0deg); }
+    100% { transform: rotateX(360deg); }
+}
